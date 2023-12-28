@@ -1,0 +1,83 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+   <!-- About Start -->
+   <div class="container-fluid py-5">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="{% static 'img/about-img.png' %}">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">À propos de nous</div>
+                <h1 class="mb-4">Nous travaillons avec les entreprises pour les aider à renforcer les liens avec leurs clients grâce à l'utilisation de l'Intelligence Artificielle</h1>
+                <p class="mb-4">Communication Client 360 est une compagnie qui se spécialise dans le domaine du service à la clientèle alimenté par la technologie de l'Intelligence Artificielle (IA) et de l'apprentissage automatique.</p>
+                <p class="mb-4">Nous offrons des services d'externalisation de centres d'appels, l'automatisation de la saisie des reçus et des factures du services administratifs, un chatbot conversationnel et des recommandations personnalisées aux acheteurs basées sur les données de vente. Nous nous efforçons de faire fonctionner parfaitement la collaboration humaine et IA pour apporter et fournir le meilleur service possible à vos clients.</p>
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>Award Winning</h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Professional Staff</h6>
+                    </div>
+                    <div class="col-sm-6">
+                        <h6 class="mb-3"><i class="fa fa-check text-primary me-2"></i>24/7 Support</h6>
+                        <h6 class="mb-0"><i class="fa fa-check text-primary me-2"></i>Fair Prices</h6>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center mt-4">
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square me-3" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Our Services Start -->
+ <!-- Case Start -->
+ <div class="container-fluid bg-light py-5">
+    <div class="container py-5">
+        <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+            <h1 class="mb-4">Découvrez nos services</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'img/project-1.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none" href="{% url 'ai_chatbot' %}">
+                        <small>IA Assistant Virtuel</small>
+                        <h5 class="lh-base text-white mb-3">Il s'agit d'un chatbot conversationnel et d'un assistant vocal interactifs à la demande basés sur l'IA.</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'img/project-2.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none" href="{% url 'gig_csr' %}">
+                        <small>Gig CSR</small>
+                        <h5 class="lh-base text-white mb-3">Gig CSR est une alternative plus rapide et plus abordable aux agences de recrutement de service client. Avec Gig CSR, vous pouvez embaucher des représentants du service client à la demande, que vous ayez besoin d'un seul représentant ou d'une équipe RSE entière.</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
+                <div class="case-item position-relative overflow-hidden rounded mb-2">
+                    <img class="img-fluid" src="{% static 'img/project-3.jpg' %}" alt="">
+                    <a class="case-overlay text-decoration-none" href="{% url 'personalize' %}">
+                        <small>Booster de ventes par l'IA</small>
+                        <h5 class="lh-base text-white mb-3">Ce service vise à aider les magasins/vendeurs de moyenne et grande taille à démarrer leurs ventes principalement grâce à l'utilisation de recommandations personnalisées basées sur l'historique d'achat des clients.</h5>
+                        <span class="btn btn-square btn-primary"><i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Case End -->
+<!-- Our Services End -->
+{% endblock content %}

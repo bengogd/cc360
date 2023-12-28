@@ -1,0 +1,1 @@
+web: gunicorn cc360.wsgi
