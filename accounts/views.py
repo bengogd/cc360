@@ -17,6 +17,6 @@ def userLogin(request):
                 return redirect('index')
             else:
                 # Invalid email or password. Handle as you wish
-                return HttpResponse('<h1>Page was found</h1>')
+                return render(request, 'accounts/not_found_404.html')
             # return render(request, 'dashboard/login.html')
-    return render(request, 'users/login.html')
+    return render(request, 'accounts/login.html')
